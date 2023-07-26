@@ -1,0 +1,26 @@
+.room {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Adjust according to the number of fields in a room */
+    gap: 1rem;
+    padding: 1rem;
+    color: #444;
+    background-color: #f0f0f0;
+    border-radius: 0px; /* Remove rounding */
+}
+
+.room > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0px; /* Remove rounding */
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.title {
+    grid-column: 1 / -1;
+    color: #333;
+    font-weight: bold;
+}
